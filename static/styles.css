@@ -32,7 +32,6 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .nav ul {
-  font-weight: bold;
   font-variant: small-caps;
   list-style-type: none;
   padding: 0;
@@ -49,12 +48,9 @@ body {
 .nav a:hover {
   color: rgb(92, 92, 92);
 }
-.nav .active {
-  color: rgb(148, 148, 148);
-}
-.who {
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
+.nav .active a {
+  font-weight: bold;
+  color: #d35050;
 }
 
 .boxy {
@@ -63,51 +59,32 @@ body {
   color: rgb(61, 63, 112);
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  transition: 0.3s;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
-
 .content {
   display: grid;
   grid-template-columns: 80px auto 80px;
-  grid-template-rows:  300px auto;
+  grid-template-rows:  150px 150px auto;
 }
 
 .content .title {
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
   background-color: #d35050;
   color: #ffffff;
 }
 
 .content .title .title-text {
-  margin: 0;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 .content .what {
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-column-start: 2;
-}
-
-.contact-link {
-  left: 100px;
 }
 
 .media {
@@ -150,6 +127,13 @@ body {
   grid-template-columns: max-content 2fr;
   grid-auto-rows: auto;
   grid-gap: 40px;
+}
+.media .icon {
+  width: 150px;
+  height: 150px;
+}
+.media .icon.circular {
+  border-radius: 50%;
 }
 
 .media.grid title {
