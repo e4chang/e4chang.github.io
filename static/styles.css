@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*
+* { 
+  box-sizing: border-box;
+  border: 1px solid red !important;
+}
+*/
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.nav ul {
+  font-weight: bold;
+  font-variant: small-caps;
+  list-style-type: none;
+  padding: 0;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  text-align: center;
+  padding: 10px 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: rgb(92, 92, 92);
+}
+.nav .active {
+  color: rgb(148, 148, 148);
+}
+.who {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.boxy {
+  padding: 40px;
+  background-color: rgb(255,255,255);
+  color: rgb(61, 63, 112);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  grid-template-rows:  300px auto;
+}
+
+.content .title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #d35050;
+  color: #ffffff;
+}
+
+.content .title .title-text {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content .what {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.contact-link {
+  left: 100px;
+}
+
+.media {
+  border:2px solid rgba(61, 63, 112,.2);
+  padding: 10px;
+  margin: 0 0 1em 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.media .download {
+  background-color: #d35050;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+.media .icon {
+  border: 1px solid rgba(61, 63, 112,.4);
+  float: left;
+  margin: 20px 20px 20px 20px;
+}
+
+.media .left {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.media .right {
+  margin-top: 20px;
+}
+
+.media.grid {
+  display: grid;
+  grid-template-columns: max-content 2fr;
+  grid-auto-rows: auto;
+  grid-gap: 40px;
+}
+
+.media.grid title {
+  margin: 0;
+}
